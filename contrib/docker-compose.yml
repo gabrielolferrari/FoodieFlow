@@ -1,0 +1,23 @@
+services:
+  gestao-postgresql:
+    image: postgres:14
+    container_name: FIAP_postgresql
+    restart: on-failure
+    ports:
+      - 5432:5432
+    volumes:
+      - ${PWD:-.}/contrib/postgresql:/docker-entrypoint-initdb.d:rw
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_INITDB_ARGS=--auth-host=md5
+    networks:
+      - FIAPPOS-network
+    deploy:
+      resources:
+        limits:
+          memory: 756M
+
+networks:
+  gestao-network:
+      driver: bridge
