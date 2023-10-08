@@ -19,5 +19,5 @@ services:
           memory: 756M
 
 networks:
-  gestao-network:
+  FIAPPOS-network:
       driver: bridge
