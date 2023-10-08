@@ -63,6 +63,17 @@ A aplicação utiliza várias bibliotecas e ferramentas, incluindo:
 
 Consulte o arquivo `requirements.txt` para uma lista completa das dependências.
 
+
+## Documentação para Execução dos Testes
+### Introdução
+Este documento descreve como configurar e executar os testes de aceitação do nosso projeto, usando o framework behave com a linguagem Gherkin.
+
+### Execução dos Testes
+Para executar os testes, você deve usar o comando `behave` na pasta /tests
+
+### Interpretação dos Resultados
+Após a execução, o behave fornecerá uma saída que indica quais cenários e passos foram bem-sucedidos e quais falharam. Use esses resultados para identificar áreas do código que podem precisar de atenção ou correção.
+
 ---
 
 Se você tiver dúvidas ou precisar de ajuda com a configuração, entre em contato com a equipe de desenvolvimento.
