@@ -12,12 +12,12 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_INITDB_ARGS=--auth-host=md5
     networks:
-      - FIAPPOS-network
+      - FIAP-network
     deploy:
       resources:
         limits:
           memory: 756M
 
 networks:
-  gestao-network:
+  FIAP-network:
       driver: bridge

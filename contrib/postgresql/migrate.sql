@@ -1,8 +1,9 @@
 CREATE SCHEMA "FIAP";
 
-CREATE TABLE "FIAP".PRODUTO (
+-- Criação da tabela Produto
+CREATE TABLE "FIAP".produto (
     id UUID PRIMARY KEY,
-    created_at TIMESTAMP,
-    nome VARCHAR(255),
-    preco FLOAT,
+    name VARCHAR(255) NOT NULL,
+    price FLOAT NOT NULL
 );
+

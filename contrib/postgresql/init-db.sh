@@ -2,5 +2,5 @@
 
 cd /docker-entrypoint-initdb.d
 
-psql -U postgres -c "CREATE DATABASE \"FIAP_postgresql\";"
-psql -U postgres --dbname "FIAP_postgresql" -f migrate.sql
+psql -U postgres -c "CREATE DATABASE \"FIAP\";"
+psql -U postgres --dbname "FIAP" -f migrate.sql
