@@ -16,12 +16,6 @@ app.router.redirect_slashes = False
 app.include_router(produtos.router)
 
 
-@app.get('/')
-@app.options('/')
-async def index() -> Response:
-    return Response(status_code=200)
-
-
 @app.get('/healthcheck')
 @app.options('/healthcheck')
 async def healthcheck(request: Request) -> Response:

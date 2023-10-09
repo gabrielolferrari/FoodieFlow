@@ -1,48 +1,60 @@
-import uuid
-
 import daiquiri
 from typing import List
 from fastapi import APIRouter, Request, status
-from commons.response import make_response
+from starlette.responses import JSONResponse
 
 from schemas.produto_schema import ProductSchema
-from repository.produto_repository import create_product, get_product
+from repository.produto_repository import create_product, get_product, get_all_products, delete_product
+
 router = APIRouter()
 log = daiquiri.getLogger(__name__)
 
 
-@router.get("/produtos/{id}", response_model=ProductSchema)
-async def product_get(request: Request, id):
+@router.get("/produtos/{id}", response_model=ProductSchema, description='Retorna um produto especificado pelo id')
+async def product_get(request: Request, id: int):
     try:
-        log.info(f'Todos os produtos solicitados')
+        log.info(f'Produto solicitado com ID: {id}')
         product = get_product(id)
-        if product:
-            return make_response(request=request, body=product, status_code=status.HTTP_200_OK)
-        else:
-            return make_response(request=request, body=f"Produto com o id: {id} não encontrado",
-                             status_code=status.HTTP_200_OK)
-
+        return product
     except Exception as ex:
-        log.error(f'[ADM] Erro ao retornar a listagem de produtos. {ex}')
+        log.error(f'[ADM] Erro ao retornar o produto. {ex}')
 
 
-@router.get("/produtos", response_model=List[ProductSchema])
+@router.get("/produtos", response_model=List[ProductSchema], description='Retorna todos os produto')
 async def products_get(request: Request):
     try:
         log.info(f'Todos os produtos solicitados')
-        product = get_product(id)
+        products = get_all_products()
 
-        return make_response(request=request, body=product, status_code=status.HTTP_200_OK)
+        return products
 
     except Exception as ex:
         log.error(f'[ADM] Erro ao retornar a listagem de produtos. {ex}')
 
 
-@router.post("/produtos", status_code=status.HTTP_200_OK, response_model=ProductSchema)
-async def products_post(request: Request, prod: ProductSchema):
+@router.post("/produtos", status_code=status.HTTP_201_CREATED,
+             description='Cria um novo produto')
+async def products_post(prod: ProductSchema):
     try:
-        product = create_product(str(uuid.uuid4()), prod.name, prod.price)
-        return make_response(request=request, body=product, status_code=status.HTTP_200_OK)
+        product = create_product(
+            name=prod.name,
+            price=prod.price,
+            img=prod.img if hasattr(prod, 'img') else None,
+            description=prod.description if hasattr(prod, 'description') else None
+        )
+        return product
 
     except Exception as ex:
         log.error(f'[ADM] Erro ao criar/atualizar produto. {ex}')
+
+
+@router.delete("/produtos/{id}", status_code=status.HTTP_204_NO_CONTENT)
+async def delete_product(request: Request, id: int):
+    try:
+        if delete_product(id):
+            return None  # Retorna uma resposta vazia com status 204 se o produto foi excluído com sucesso
+        else:
+            return JSONResponse(content={"message": f"Produto com o ID {id} não encontrado"}, status_code=status.HTTP_404_NOT_FOUND)
+
+    except Exception as ex:
+        log.error(f'Erro ao excluir produto. {ex}')
