@@ -4,7 +4,10 @@ from fastapi import FastAPI, Request, Response
 from commons.logging import configure as config_logging
 from commons.response import make_response
 from routes import produtos
+from decouple import config
 
+HOST = config('HOST', default='127.0.0.1')
+PORT = config('PORT', default='8000')
 
 config_logging()
 
@@ -25,8 +28,8 @@ async def healthcheck(request: Request) -> Response:
 if __name__ == '__main__':
     uvicorn.run(
         'main:app',
-        host='127.0.0.1',
-        port=8000,
+        host=HOST,
+        port=PORT,
         reload=True,
         workers=1,
         server_header=False,

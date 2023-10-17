@@ -6,9 +6,10 @@ from daiquiri import formatter
 from decouple import config
 from uvicorn.config import LOGGING_CONFIG
 
+ENV = config('ENV', default='dev')
 
 def configure():
-    env = str(config('ENV', 'dev')).upper()
+    env = str(ENV).upper()
     if env in ['HML', 'PRD']:
         from ddtrace import patch
 

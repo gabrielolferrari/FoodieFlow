@@ -1,3 +1,5 @@
+CREATE DATABASE FIAP;
+
 CREATE SCHEMA "FIAP";
 
 -- Criação da tabela Produto
