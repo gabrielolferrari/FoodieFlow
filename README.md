@@ -7,6 +7,24 @@ Um projeto para gerenciamento de produtos.
 ## Configuração de Ambiente
 ### Rodando projeto local
 
+1. Crie uma cópia do arquivo `env-example` e renomeie para `.env`. Preencha as variáveis de ambiente conforme necessário para configurar o ambiente.
+
+```bash
+cp env-example .env
+```
+
+2. Tenha instalado o `docker` e `docker-compose` na sua máquina e rode o comando abaixo para subir a aplicação
+
+```bash
+docker-compose up -d
+```
+
+OBS: O parâmetro `-d` é para rodar em background, caso queira ver os logs, remova o parâmetro.
+
+3. Acesse a aplicação `http://localhost:8000/healtcheck`
+
+## Configuração de Ambiente (antigo)
+
 ```
 python3 -m venv .venv
 source .venv/bin/activate
