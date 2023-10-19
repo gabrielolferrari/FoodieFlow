@@ -28,12 +28,12 @@ dev-run:
 
 infra-stop:
 	@{\
-  		docker-compose -f contrib/docker-compose.yml stop ;\
+  		docker-compose -f docker-compose.yml stop ;\
 	}
 
 infra-start: infra-stop
 	@{\
-		docker-compose -f contrib/docker-compose.yml up --remove-orphans ;\
+		docker-compose -f docker-compose.yml up --remove-orphans ;\
 	}
 
 docker-build:
