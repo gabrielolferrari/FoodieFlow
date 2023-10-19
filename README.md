@@ -24,7 +24,7 @@ docker-compose up -d
 
 OBS: O parâmetro `-d` é para rodar em background, caso queira ver os logs, remova o parâmetro.
 
-3. Acesse a aplicação `http://localhost:8000/healtcheck`
+3. Acesse a aplicação `http://localhost:8000/healthcheck`
 
 ## Configuração de Ambiente (antigo)
 
