@@ -11,7 +11,9 @@ services:
       - .env
     ports:
       - 8000:8000
-  
+    depends_on:
+      - gestao-postgresql
+
   gestao-postgresql:
     image: postgres:14
     container_name: FIAP_postgresql
@@ -20,12 +22,11 @@ services:
       - 5432:5432
     volumes:
       - ./contrib/postgresql:/docker-entrypoint-initdb.d
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_INITDB_ARGS=--auth-host=md5
+      #- ./db-data/:/var/lib/postgresql/data/
     networks:
       - FIAP-network
+    env_file:
+      - .env
     deploy:
       resources:
         limits:
@@ -33,4 +34,4 @@ services:
 
 networks:
   FIAP-network:
-      driver: bridge
+    driver: bridge

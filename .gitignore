@@ -16,11 +16,12 @@ ENV/
 # IDEs and editors
 .idea/
 .vscode/
-*.sublime-project
-*.sublime-workspace
 
 # Local development settings
 .env
 
 # Logs and databases
 *.log
+
+# DB files
+db-data/

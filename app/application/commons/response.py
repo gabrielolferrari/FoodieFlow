@@ -4,7 +4,7 @@ import simplejson
 from decouple import config
 from fastapi import Request, Response
 
-from commons.converter import custom_json_converter
+from application.commons.converter import custom_json_converter
 
 
 def make_response(
