@@ -4,10 +4,8 @@ from sqlalchemy.ext.declarative import declarative_base
 
 from infrastructure.database import Base
 
-class Cliente(Base):
-    __tablename__ = "cliente"
+class Categoria(Base):
+    __tablename__ = "categoria"
 
     id = Column(INTEGER, primary_key=True, index=True)
-    cpf = Column(VARCHAR(11), unique=True, index=True, nullable=False)
     nome = Column(VARCHAR(255))
-    email = Column(VARCHAR(255))

@@ -5,7 +5,7 @@ from core.usecases.cliente_service_impl import ClienteServiceImpl
 from core.ports.cliente_repository import ClienteRepository
 from infrastructure.dataprovider.cliente_database_adapter import ClienteDatabaseAdapter
 from core.model.cliente import Cliente as ClienteModel
-from infrastructure.dataprovider.database import get_db
+from infrastructure.database import get_db
 
 router = APIRouter()
 log = daiquiri.getLogger(__name__)
