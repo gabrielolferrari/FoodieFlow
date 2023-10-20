@@ -13,7 +13,7 @@ log = daiquiri.getLogger(__name__)
 cliente_repository: ClienteRepository = ClienteDatabaseAdapter()
 cliente_service = ClienteServiceImpl(cliente_repository)
 
-@router.post("/clientes/", response_model=ClienteModel, description="Cria um novo cliente")
+@router.post("/", response_model=ClienteModel, description="Cria um novo cliente")
 def create_cliente(cliente: ClienteModel, db: Session = Depends(get_db)):
     try:
         log.info(f"Cliente para criação: {cliente}")
@@ -24,7 +24,7 @@ def create_cliente(cliente: ClienteModel, db: Session = Depends(get_db)):
             raise HTTPException(status_code=400, detail="Cliente já cadastrado")
         raise HTTPException(status_code=400, detail="Erro ao criar cliente")
 
-@router.get("/clientes/{cliente_id}", response_model=ClienteModel, description="Busca um cliente pelo ID")
+@router.get("/{cliente_id}", response_model=ClienteModel, description="Busca um cliente pelo ID")
 def read_cliente(cliente_id: int, db: Session = Depends(get_db)):
     try:
         log.info(f"Buscando cliente com ID {cliente_id}")
@@ -38,7 +38,7 @@ def read_cliente(cliente_id: int, db: Session = Depends(get_db)):
         log.error(f"Erro ao buscar cliente. {str(ex)}")
         raise HTTPException(status_code=400, detail="Erro ao buscar cliente")
 
-@router.get("/clientes/", response_model=list[ClienteModel], description="Busca todos os clientes")
+@router.get("/", response_model=list[ClienteModel], description="Busca todos os clientes")
 def read_clientes(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     try:
         log.info(f"Buscando clientes")
@@ -47,7 +47,7 @@ def read_clientes(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)
         log.error(f"Erro ao buscar clientes. {str(ex)}")
         raise HTTPException(status_code=400, detail="Erro ao buscar clientes")
 
-@router.put("/clientes/{cliente_id}", response_model=ClienteModel, description="Atualiza um cliente")
+@router.put("/{cliente_id}", response_model=ClienteModel, description="Atualiza um cliente")
 def update_cliente(cliente_id: int, updated_cliente: ClienteModel, db: Session = Depends(get_db)):
     try:
         log.info(f"Cliente recebido para atualização: {updated_cliente}")
@@ -61,7 +61,7 @@ def update_cliente(cliente_id: int, updated_cliente: ClienteModel, db: Session =
         log.error(f"Erro ao atualizar cliente. {str(ex)}")
         raise HTTPException(status_code=400, detail="Erro ao atualizar cliente")
 
-@router.delete("/clientes/{cliente_id}", description="Deleta um cliente")
+@router.delete("/{cliente_id}", description="Deleta um cliente")
 def delete_cliente(cliente_id: int, db: Session = Depends(get_db)):
     try:
         log.info(f"Deletando cliente com ID {cliente_id}")

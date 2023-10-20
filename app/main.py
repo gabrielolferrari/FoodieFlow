@@ -25,7 +25,7 @@ app = FastAPI(
 
 app.router.redirect_slashes = True
 
-app.include_router(cliente_controller.router)
+app.include_router(cliente_controller.router, prefix='/clientes')
 
 @app.on_event("startup")
 async def startup_event():
