@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from . import database
+from infrastructure import database
 from core.model.cliente import Cliente as ClienteModel
 from core.model.orm.cliente import Cliente as ClienteORM
 

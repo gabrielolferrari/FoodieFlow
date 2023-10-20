@@ -5,8 +5,9 @@ from fastapi import FastAPI, Request, Response
 from application.commons.logging import configure as config_logging
 from application.commons.response import make_response
 from application.entrypoint import cliente_controller
+from application.entrypoint import categoria_controller
 from decouple import config
-from infrastructure.dataprovider.database import init_db;
+from infrastructure.database import init_db;
 
 HOST = config('HOST_API', default='localhost')
 PORT = config('PORT_API', default='8000')
@@ -26,6 +27,7 @@ app = FastAPI(
 app.router.redirect_slashes = True
 
 app.include_router(cliente_controller.router, prefix='/clientes')
+app.include_router(categoria_controller.router, prefix='/categorias')
 
 @app.on_event("startup")
 async def startup_event():
