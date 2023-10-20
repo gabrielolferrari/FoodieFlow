@@ -16,3 +16,4 @@ class Produto(Base):
     # Relacionamentos
     categoria = relationship("Categoria", backref="produtos")
     ingredientes = relationship("Ingrediente", secondary=produto_ingrediente, backref="produtos")
+    imagens = relationship("Imagem", backref="produto")
