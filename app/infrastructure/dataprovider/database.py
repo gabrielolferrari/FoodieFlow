@@ -18,7 +18,8 @@ SQLALCHEMY_DATABASE_URL = (
 Base = declarative_base()
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
-Base.metadata.create_all(bind=engine)
+def init_db():
+    Base.metadata.create_all(bind=engine)
 
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
