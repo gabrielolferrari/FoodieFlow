@@ -7,5 +7,5 @@ from infrastructure.database import Base
 class Categoria(Base):
     __tablename__ = "categoria"
 
-    id = Column(INTEGER, primary_key=True, index=True)
-    nome = Column(VARCHAR(255))
+    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
+    nome = Column(String, nullable=False)
