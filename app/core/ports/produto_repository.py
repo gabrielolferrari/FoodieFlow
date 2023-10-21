@@ -15,6 +15,10 @@ class ProdutoRepository(ABC):
     @abstractmethod
     def get_produtos(self, db: Session, skip: int = 0, limit: int = 100):
         pass
+    
+    @abstractmethod
+    def get_produtos_by_categoria(self, db: Session, id_categoria: int, skip: int = 0, limit: int = 100):
+        pass
 
     @abstractmethod
     def update_produto(self, db: Session, produto_id: int, updated_produto: ProdutoModel):

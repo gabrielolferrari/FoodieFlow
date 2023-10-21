@@ -35,6 +35,20 @@ def read_produto(produto_id: int, db: Session = Depends(get_db)):
     except Exception as ex:
         log.error(f"Erro ao buscar produto. {str(ex)}")
         raise HTTPException(status_code=400, detail="Erro ao buscar produto")
+    
+@router.get("/categoria/{id_categoria}", response_model=list[ProdutoModel], description="Busca um produtos pelo ID da categoria")
+def read_produtos_by_categoria(id_categoria: int, db: Session = Depends(get_db)):
+    try:
+        log.info(f"Buscando produtos com ID da categoria {id_categoria}")
+        produto = produto_service.get_produtos_by_categoria(db, id_categoria)
+        if not produto:
+            raise HTTPException(status_code=404, detail=f"Produtos não encontrado para a categoria {id_categoria}")
+        return produto
+    except HTTPException:
+        raise
+    except Exception as ex:
+        log.error(f"Erro ao buscar produto. {str(ex)}")
+        raise HTTPException(status_code=400, detail="Erro ao buscar produtos")
 
 @router.get("/", response_model=list[ProdutoModel], description="Busca todos os produtos")
 def read_produtos(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):

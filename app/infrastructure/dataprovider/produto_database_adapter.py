@@ -64,6 +64,14 @@ class ProdutoDatabaseAdapter:
         ).offset(skip).limit(limit).all()
 
         return [self._to_produto_completo(produto) for produto in produtos]
+    
+    def get_produtos_by_categoria(self, db: Session, id_categoria: int, skip: int = 0, limit: int = 100):
+        produtos = db.query(ProdutoORM).options(
+            joinedload(ProdutoORM.ingredientes),
+            joinedload(ProdutoORM.imagens)
+        ).filter(ProdutoORM.id_categoria == id_categoria).offset(skip).limit(limit).all()
+
+        return [self._to_produto_completo(produto) for produto in produtos]
 
     def update_produto(self, db: Session, produto_id: int, updated_produto: ProdutoModel) -> ProdutoCompleto:
         db_produto = db.query(ProdutoORM).filter(ProdutoORM.id == produto_id).first()

@@ -15,6 +15,9 @@ class ProdutoServiceImpl:
     def get_produtos(self, db: Session, skip: int = 0, limit: int = 100):
         return self.produto_repository.get_produtos(db, skip, limit)
     
+    def get_produtos_by_categoria(self, db: Session, id_categoria: int,skip: int = 0, limit: int = 100):
+        return self.produto_repository.get_produtos_by_categoria(db, id_categoria, skip, limit)
+    
     def update_produto(self, db: Session, produto_id: int, updated_produto: ProdutoModel):
         return self.produto_repository.update_produto(db, produto_id, updated_produto)
     
