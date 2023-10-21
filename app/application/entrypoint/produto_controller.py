@@ -5,7 +5,7 @@ from core.usecases.produto_service_impl import ProdutoServiceImpl
 from core.ports.produto_repository import ProdutoRepository
 from infrastructure.dataprovider.produto_database_adapter import ProdutoDatabaseAdapter
 from core.model.produto import Produto as ProdutoModel
-from infrastructure.dataprovider.database import get_db
+from infrastructure.database import get_db
 
 router = APIRouter()
 log = daiquiri.getLogger(__name__)
