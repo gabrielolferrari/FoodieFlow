@@ -32,6 +32,16 @@ services:
         limits:
           memory: 756M
 
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    ports:
+      - "5050:80"
+    networks:
+      - FIAP-network
+
 networks:
   FIAP-network:
     driver: bridge
