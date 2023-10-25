@@ -37,6 +37,21 @@ def read_cliente(cliente_id: int, db: Session = Depends(get_db)):
     except Exception as ex:
         log.error(f"Erro ao buscar cliente. {str(ex)}")
         raise HTTPException(status_code=400, detail="Erro ao buscar cliente")
+    
+@router.get("/bycpf/{cpf}", response_model=ClienteModel, description="Busca um cliente pelo CPF")
+def read_cliente_by_cpf(cpf: str, db: Session = Depends(get_db)):
+    try:
+        log.info(f"Buscando cliente com CPF {cpf}")
+        cliente = cliente_service.get_cliente_by_cpf(db, cpf)
+        if not cliente:
+            raise HTTPException(status_code=404, detail="Cliente não encontrado pelo CPF")
+        return cliente
+    except HTTPException:
+        raise
+    except Exception as ex:
+        log.error(f"Erro ao buscar cliente pelo CPF. {str(ex)}")
+        raise HTTPException(status_code=400, detail="Erro ao buscar cliente pelo CPF")
+
 
 @router.get("/", response_model=list[ClienteModel], description="Busca todos os clientes")
 def read_clientes(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
