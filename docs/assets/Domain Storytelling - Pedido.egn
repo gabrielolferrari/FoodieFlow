@@ -1,0 +1,1437 @@
+{
+  "domain": {
+    "name": "[icons: default]",
+    "actors": {
+      "Person": "<svg viewBox=\"0 0 24 26\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z\"/><path d=\"M0 0h24v24H0z\" fill=\"none\"/></svg>",
+      "Group": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"48\" viewBox=\"0 0 24 26\"><path d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M16.5 13c-1.2 0-3.07.34-4.5 1-1.43-.67-3.3-1-4.5-1C5.33 13 1 14.08 1 16.25V19h22v-2.75c0-2.17-4.33-3.25-6.5-3.25zm-4 4.5h-10v-1.25c0-.54 2.56-1.75 5-1.75s5 1.21 5 1.75v1.25zm9 0H14v-1.25c0-.46-.2-.86-.52-1.22.88-.3 1.96-.53 3.02-.53 2.44 0 5 1.21 5 1.75v1.25zM7.5 12c1.93 0 3.5-1.57 3.5-3.5S9.43 5 7.5 5 4 6.57 4 8.5 5.57 12 7.5 12zm0-5.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 5.5c1.93 0 3.5-1.57 3.5-3.5S18.43 5 16.5 5 13 6.57 13 8.5s1.57 3.5 3.5 3.5zm0-5.5c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z\"/></svg>",
+      "System": "<svg viewBox=\"0 0 24 26\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M20,18c1.1,0,2-0.9,2-2V6c0-1.1-0.9-2-2-2H4C2.9,4,2,4.9,2,6v10c0,1.1,0.9,2,2,2H0v2h24v-2H20z M4,6h16v10H4V6z\"/></svg>",
+      "Tablet": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 28\"><path fill=\"none\" d=\"M0 0h24v24H0V0zm0 0h24v24H0V0z\"/><path d=\"M18 0H6C4.34 0 3 1.34 3 3v18c0 1.66 1.34 3 3 3h12c1.66 0 3-1.34 3-3V3c0-1.66-1.34-3-3-3zm-4 22h-4v-1h4v1zm5.25-3H4.75V3h14.5v16z\"/></svg>",
+      "Cloud": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 26\"><path fill=\"none\" d=\"M0 0h24v24H0V0z\"/><path d=\"M12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6m0-2C9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96C18.67 6.59 15.64 4 12 4z\"/></svg>"
+    },
+    "workObjects": {
+      "Document": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 26\"><path fill=\"none\" d=\"M0 0h24v24H0V0z\"/><path d=\"M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z\"/></svg>",
+      "Folder": "<svg viewBox=\"0 0 24 26\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"none\" d=\"M0,0h24v24H0V0z\"/><path d=\"M9.17,6l2,2H20v10L4,18V6H9.17 M10,4H4C2.9,4,2.01,4.9,2.01,6L2,18c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V8c0-1.1-0.9-2-2-2 h-8L10,4L10,4z\"/></svg>",
+      "Call": "<svg viewBox=\"0 0 24 26\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"none\" d=\"M0,0h24v24H0V0z\"/><path d=\"M6.54,5C6.6,5.89,6.75,6.76,6.99,7.59l-1.2,1.2C5.38,7.59,5.12,6.32,5.03,5H6.54 M16.4,17.02c0.85,0.24,1.72,0.39,2.6,0.45 v1.49c-1.32-0.09-2.59-0.35-3.8-0.75L16.4,17.02 M7.5,3H4C3.45,3,3,3.45,3,4c0,9.39,7.61,17,17,17c0.55,0,1-0.45,1-1v-3.49\tc0-0.55-0.45-1-1-1c-1.24,0-2.45-0.2-3.57-0.57c-0.1-0.04-0.21-0.05-0.31-0.05c-0.26,0-0.51,0.1-0.71,0.29l-2.2,2.2 c-2.83-1.45-5.15-3.76-6.59-6.59l2.2-2.2C9.1,8.31,9.18,7.92,9.07,7.57C8.7,6.45,8.5,5.25,8.5,4C8.5,3.45,8.05,3,7.5,3L7.5,3z\"/></svg>",
+      "Email": "<svg viewBox=\"0 0 24 26\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"none\" d=\"M0,0h24v24H0V0z\"/><path fill-opacity=\"0.9\" d=\"M12,1.95c-5.52,0-10,4.48-10,10s4.48,10,10,10h5v-2h-5c-4.34,0-8-3.66-8-8s3.66-8,8-8s8,3.66,8,8v1.43 c0,0.79-0.71,1.57-1.5,1.57S17,14.17,17,13.38v-1.43c0-2.76-2.24-5-5-5s-5,2.24-5,5s2.24,5,5,5c1.38,0,2.64-0.56,3.54-1.47 c0.65,0.89,1.77,1.47,2.96,1.47c1.97,0,3.5-1.6,3.5-3.57v-1.43C22,6.43,17.52,1.95,12,1.95z M12,14.95c-1.66,0-3-1.34-3-3 s1.34-3,3-3s3,1.34,3,3S13.66,14.95,12,14.95z\"/></svg>",
+      "Conversation": "<svg height=\"48\" viewBox=\"0 0 24 26\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 0h24v24H0V0z\" fill=\"none\"/><path d=\"M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z\"/></svg>",
+      "Info": "<svg height=\"48\" viewBox=\"0 0 24 26\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0 0h24v24H0z\" fill=\"none\"/><path d=\"M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z\"/></svg>",
+      "View-List": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 26\"><path opacity=\".87\" fill=\"none\" d=\"M0 0h24v24H0V0z\"/><path d=\"M3 5v14h17V5H3zm4 2v2H5V7h2zm-2 6v-2h2v2H5zm0 2h2v2H5v-2zm13 2H9v-2h9v2zm0-4H9v-2h9v2zm0-4H9V7h9v2z\"/></svg>",
+      "Dollar": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 26\"><path fill=\"none\" d=\"M0 0h24v24H0V0z\"/><path d=\"M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z\"/></svg>",
+      "Receipt": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 28\"><path fill=\"none\" d=\"M0 0h24v24H0V0z\"/><path d=\"M19.5 3.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2 7.5 3.5 6 2 4.5 3.5 3 2v20l1.5-1.5L6 22l1.5-1.5L9 22l1.5-1.5L12 22l1.5-1.5L15 22l1.5-1.5L18 22l1.5-1.5L21 22V2l-1.5 1.5zM19 19.09H5V4.91h14v14.18zM6 15h12v2H6zm0-4h12v2H6zm0-4h12v2H6z\"/></svg>",
+      "Printer": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 26\"><path fill=\"none\" d=\"M0 0h24v24H0V0z\"/><path d=\"M19 8h-1V3H6v5H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zM8 5h8v3H8V5zm8 12v2H8v-4h8v2zm2-2v-2H6v2H4v-4c0-.55.45-1 1-1h14c.55 0 1 .45 1 1v4h-2z\"/><circle cx=\"18\" cy=\"11.5\" r=\"1\"/></svg>",
+      "Cellphone": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 28\"><path fill=\"none\" d=\"M0 0h24v24H0V0z\"/><path d=\"M7 22h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2zM16 .01L8 0C6.9 0 6 .9 6 2v16c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V2c0-1.1-.9-1.99-2-1.99zM16 18H8v-1h8v1zm0-3H8V5h8v10zm0-12H8V2h8v1z\"/></svg>"
+    }
+  },
+  "dst": [
+    {
+      "type": "domainStory:connection",
+      "name": "",
+      "id": "connection_8617",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "waypoints": [
+        {
+          "original": {
+            "x": 678,
+            "y": 198
+          },
+          "x": 678,
+          "y": 198
+        },
+        {
+          "original": {
+            "x": 728,
+            "y": 225
+          },
+          "x": 728,
+          "y": 225
+        }
+      ],
+      "source": "shape_5117",
+      "target": "shape_5539"
+    },
+    {
+      "type": "domainStory:connection",
+      "name": "",
+      "id": "connection_9948",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "waypoints": [
+        {
+          "original": {
+            "x": 679,
+            "y": -189
+          },
+          "x": 679,
+          "y": -189
+        },
+        {
+          "original": {
+            "x": 721,
+            "y": -216
+          },
+          "x": 721,
+          "y": -216
+        }
+      ],
+      "source": "shape_4937",
+      "target": "shape_8739"
+    },
+    {
+      "type": "domainStory:connection",
+      "name": "",
+      "id": "connection_5175",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "waypoints": [
+        {
+          "original": {
+            "x": 676,
+            "y": -101
+          },
+          "x": 676,
+          "y": -101
+        },
+        {
+          "original": {
+            "x": 693,
+            "y": -126
+          },
+          "x": 693,
+          "y": -126
+        }
+      ],
+      "source": "shape_9284",
+      "target": "shape_1251"
+    },
+    {
+      "$type": "Element",
+      "name": "Pedido",
+      "id": "shape_5501",
+      "di": {},
+      "type": "domainStory:workObjectView-List",
+      "pickedColor": "black",
+      "x": 608,
+      "y": 263,
+      "$descriptor": {}
+    },
+    {
+      "type": "domainStory:workObjectCellphone",
+      "name": "PIX",
+      "id": "shape_4801",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 127,
+      "y": 3
+    },
+    {
+      "type": "domainStory:textAnnotation",
+      "name": "",
+      "id": "shape_5539",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "x": 705,
+      "y": 225,
+      "text": "Apenas se produto for personalizável",
+      "number": 57,
+      "width": 100,
+      "height": 57
+    },
+    {
+      "type": "domainStory:workObjectView-List",
+      "name": "Pedido",
+      "id": "shape_8921",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 1147,
+      "y": -128
+    },
+    {
+      "type": "domainStory:workObjectConversation",
+      "name": "Personalização",
+      "id": "shape_5117",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 607,
+      "y": 142
+    },
+    {
+      "type": "domainStory:workObjectInfo",
+      "name": "Personalizável",
+      "id": "shape_4346",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 1147,
+      "y": -218
+    },
+    {
+      "type": "domainStory:workObjectView-List",
+      "name": "Produtos",
+      "id": "shape_9890",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 607,
+      "y": 52
+    },
+    {
+      "type": "domainStory:workObjectDocument",
+      "name": "Cadastro completo",
+      "id": "shape_9284",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 607,
+      "y": -128
+    },
+    {
+      "type": "domainStory:workObjectDocument",
+      "name": "CPF",
+      "id": "shape_7426",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 1147,
+      "y": -308
+    },
+    {
+      "type": "domainStory:textAnnotation",
+      "name": "",
+      "id": "shape_8739",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "x": 720,
+      "y": -244,
+      "text": "Opcional",
+      "number": 28,
+      "width": 100,
+      "height": 28
+    },
+    {
+      "type": "domainStory:workObjectDocument",
+      "name": "CPF",
+      "id": "shape_4937",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 607,
+      "y": -218
+    },
+    {
+      "type": "domainStory:actorTablet",
+      "name": "Aplicação",
+      "id": "shape_5649",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 878,
+      "y": -8
+    },
+    {
+      "type": "domainStory:actorPerson",
+      "name": "Cliente",
+      "id": "shape_5181",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 317,
+      "y": -8
+    },
+    {
+      "type": "domainStory:workObjectConversation",
+      "name": "interação",
+      "id": "shape_3349",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 607,
+      "y": -308
+    },
+    {
+      "type": "domainStory:textAnnotation",
+      "name": "",
+      "id": "shape_1251",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "x": 680,
+      "y": -154,
+      "text": "Se não existir",
+      "number": 28,
+      "width": 100,
+      "height": 28
+    },
+    {
+      "type": "domainStory:workObjectDocument",
+      "name": "Cardápio",
+      "id": "shape_5054",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 607,
+      "y": -38
+    },
+    {
+      "type": "domainStory:workObjectDollar",
+      "name": "QRCode",
+      "id": "shape_1970",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 607,
+      "y": 352
+    },
+    {
+      "type": "domainStory:actorCloud",
+      "name": "gateway",
+      "id": "shape_4656",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 1367,
+      "y": -15
+    },
+    {
+      "type": "domainStory:workObjectDollar",
+      "name": "cobrança",
+      "id": "shape_4573",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 1147,
+      "y": -58
+    },
+    {
+      "$type": "Element",
+      "name": "QRCode",
+      "id": "shape_7933",
+      "di": {},
+      "type": "domainStory:workObjectDollar",
+      "pickedColor": "black",
+      "x": 1147,
+      "y": 52,
+      "$descriptor": {}
+    },
+    {
+      "type": "domainStory:workObjectReceipt",
+      "name": "recebimento",
+      "id": "shape_2639",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 1148,
+      "y": 143
+    },
+    {
+      "type": "domainStory:workObjectPrinter",
+      "name": "recibo",
+      "id": "shape_0433",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "x": 1147,
+      "y": 263
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "na",
+      "id": "connection_6628",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 688,
+            "y": -180
+          },
+          "x": 688,
+          "y": -180
+        },
+        {
+          "x": 855,
+          "y": -180
+        },
+        {
+          "original": {
+            "x": 898,
+            "y": -8
+          },
+          "x": 898,
+          "y": -8
+        }
+      ],
+      "source": "shape_4937",
+      "target": "shape_5649",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "verifica",
+      "id": "connection_1598",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 3,
+      "waypoints": [
+        {
+          "original": {
+            "x": 932,
+            "y": 4
+          },
+          "x": 932,
+          "y": 4
+        },
+        {
+          "x": 1005,
+          "y": -270
+        },
+        {
+          "original": {
+            "x": 1147,
+            "y": -270
+          },
+          "x": 1147,
+          "y": -270
+        }
+      ],
+      "source": "shape_5649",
+      "target": "shape_7426",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "solicita",
+      "id": "connection_5732",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 4,
+      "waypoints": [
+        {
+          "original": {
+            "x": 890,
+            "y": 0
+          },
+          "x": 884,
+          "y": -8
+        },
+        {
+          "x": 810,
+          "y": -110
+        },
+        {
+          "original": {
+            "x": 660,
+            "y": -110
+          },
+          "x": 668,
+          "y": -110
+        }
+      ],
+      "source": "shape_5649",
+      "target": "shape_9284",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "Informa",
+      "id": "connection_2952",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 2,
+      "waypoints": [
+        {
+          "original": {
+            "x": 364,
+            "y": -3
+          },
+          "x": 364,
+          "y": -3
+        },
+        {
+          "x": 415,
+          "y": -180
+        },
+        {
+          "original": {
+            "x": 607,
+            "y": -180
+          },
+          "x": 607,
+          "y": -180
+        }
+      ],
+      "source": "shape_5181",
+      "target": "shape_4937",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "para",
+      "id": "connection_7934",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 620,
+            "y": -110
+          },
+          "x": 607,
+          "y": -110
+        },
+        {
+          "x": 480,
+          "y": -110
+        },
+        {
+          "original": {
+            "x": 355,
+            "y": 10
+          },
+          "x": 366,
+          "y": -1
+        }
+      ],
+      "source": "shape_9284",
+      "target": "shape_5181",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "com",
+      "id": "connection_9706",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 688,
+            "y": -270
+          },
+          "x": 688,
+          "y": -270
+        },
+        {
+          "x": 916,
+          "y": -270
+        },
+        {
+          "original": {
+            "x": 916,
+            "y": -8
+          },
+          "x": 916,
+          "y": -8
+        }
+      ],
+      "source": "shape_3349",
+      "target": "shape_5649",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "inicia",
+      "id": "connection_1673",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 1,
+      "waypoints": [
+        {
+          "original": {
+            "x": 355,
+            "y": -8
+          },
+          "x": 355,
+          "y": -8
+        },
+        {
+          "x": 355,
+          "y": -270
+        },
+        {
+          "original": {
+            "x": 607,
+            "y": -270
+          },
+          "x": 607,
+          "y": -270
+        }
+      ],
+      "source": "shape_5181",
+      "target": "shape_3349",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "exibe",
+      "id": "connection_2118",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 6,
+      "waypoints": [
+        {
+          "original": {
+            "x": 878,
+            "y": 23
+          },
+          "x": 878,
+          "y": 23
+        },
+        {
+          "x": 745,
+          "y": 0
+        },
+        {
+          "original": {
+            "x": 688,
+            "y": 0
+          },
+          "x": 688,
+          "y": 0
+        }
+      ],
+      "source": "shape_5649",
+      "target": "shape_5054",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "para",
+      "id": "connection_2881",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 607,
+            "y": 0
+          },
+          "x": 607,
+          "y": 0
+        },
+        {
+          "x": 545,
+          "y": 0
+        },
+        {
+          "original": {
+            "x": 391,
+            "y": 23
+          },
+          "x": 391,
+          "y": 23
+        }
+      ],
+      "source": "shape_5054",
+      "target": "shape_5181",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "escolhe",
+      "id": "connection_3380",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 7,
+      "waypoints": [
+        {
+          "original": {
+            "x": 394,
+            "y": 42
+          },
+          "x": 394,
+          "y": 42
+        },
+        {
+          "x": 545,
+          "y": 90
+        },
+        {
+          "original": {
+            "x": 607,
+            "y": 90
+          },
+          "x": 607,
+          "y": 90
+        }
+      ],
+      "source": "shape_5181",
+      "target": "shape_9890",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "na",
+      "id": "connection_1410",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 688,
+            "y": 90
+          },
+          "x": 688,
+          "y": 90
+        },
+        {
+          "x": 755,
+          "y": 90
+        },
+        {
+          "original": {
+            "x": 878,
+            "y": 55
+          },
+          "x": 878,
+          "y": 55
+        }
+      ],
+      "source": "shape_9890",
+      "target": "shape_5649",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "verifica",
+      "id": "connection_8073",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 8,
+      "waypoints": [
+        {
+          "original": {
+            "x": 931,
+            "y": 2
+          },
+          "x": 931,
+          "y": 2
+        },
+        {
+          "x": 1025,
+          "y": -180
+        },
+        {
+          "original": {
+            "x": 1147,
+            "y": -180
+          },
+          "x": 1147,
+          "y": -180
+        }
+      ],
+      "source": "shape_5649",
+      "target": "shape_4346",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "solicita",
+      "id": "connection_8191",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 9,
+      "waypoints": [
+        {
+          "original": {
+            "x": 878,
+            "y": 73
+          },
+          "x": 878,
+          "y": 73
+        },
+        {
+          "x": 765,
+          "y": 160
+        },
+        {
+          "original": {
+            "x": 668,
+            "y": 160
+          },
+          "x": 668,
+          "y": 160
+        }
+      ],
+      "source": "shape_5649",
+      "target": "shape_5117",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "para",
+      "id": "connection_2107",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 607,
+            "y": 160
+          },
+          "x": 607,
+          "y": 160
+        },
+        {
+          "x": 505,
+          "y": 160
+        },
+        {
+          "original": {
+            "x": 385,
+            "y": 60
+          },
+          "x": 385,
+          "y": 60
+        }
+      ],
+      "source": "shape_5117",
+      "target": "shape_5181",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "na",
+      "id": "connection_8769",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 687,
+            "y": 190
+          },
+          "x": 687,
+          "y": 190
+        },
+        {
+          "x": 845,
+          "y": 190
+        },
+        {
+          "original": {
+            "x": 888,
+            "y": 77
+          },
+          "x": 888,
+          "y": 77
+        }
+      ],
+      "source": "shape_5117",
+      "target": "shape_5649",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "define",
+      "id": "connection_7619",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 10,
+      "waypoints": [
+        {
+          "original": {
+            "x": 375,
+            "y": 75
+          },
+          "x": 375,
+          "y": 75
+        },
+        {
+          "x": 485,
+          "y": 190
+        },
+        {
+          "original": {
+            "x": 607,
+            "y": 190
+          },
+          "x": 607,
+          "y": 190
+        }
+      ],
+      "source": "shape_5181",
+      "target": "shape_5117",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "Registra",
+      "id": "connection_4440",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 11,
+      "waypoints": [
+        {
+          "original": {
+            "x": 937,
+            "y": 9
+          },
+          "x": 937,
+          "y": 9
+        },
+        {
+          "x": 1035,
+          "y": -91
+        },
+        {
+          "original": {
+            "x": 1147,
+            "y": -91
+          },
+          "x": 1147,
+          "y": -91
+        }
+      ],
+      "source": "shape_5649",
+      "target": "shape_8921",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "Informa",
+      "id": "connection_9469",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 15,
+      "waypoints": [
+        {
+          "original": {
+            "x": 916,
+            "y": 77
+          },
+          "x": 916,
+          "y": 77
+        },
+        {
+          "x": 916,
+          "y": 390
+        },
+        {
+          "original": {
+            "x": 688,
+            "y": 390
+          },
+          "x": 688,
+          "y": 390
+        }
+      ],
+      "source": "shape_5649",
+      "target": "shape_1970",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "ao",
+      "id": "connection_8839",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 607,
+            "y": 390
+          },
+          "x": 607,
+          "y": 390
+        },
+        {
+          "x": 345,
+          "y": 390
+        },
+        {
+          "original": {
+            "x": 345,
+            "y": 77
+          },
+          "x": 345,
+          "y": 77
+        }
+      ],
+      "source": "shape_1970",
+      "target": "shape_5181",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "Realiza",
+      "id": "connection_3741",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 16,
+      "waypoints": [
+        {
+          "original": {
+            "x": 317,
+            "y": 30
+          },
+          "x": 317,
+          "y": 30
+        },
+        {
+          "original": {
+            "x": 197,
+            "y": 30
+          },
+          "x": 197,
+          "y": 30
+        }
+      ],
+      "source": "shape_5181",
+      "target": "shape_4801",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "fecha",
+      "id": "connection_5559",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 12,
+      "waypoints": [
+        {
+          "original": {
+            "x": 359,
+            "y": 77
+          },
+          "x": 359,
+          "y": 77
+        },
+        {
+          "x": 365,
+          "y": 140
+        },
+        {
+          "x": 415,
+          "y": 301
+        },
+        {
+          "original": {
+            "x": 608,
+            "y": 301
+          },
+          "x": 608,
+          "y": 301
+        }
+      ],
+      "source": "shape_5181",
+      "target": "shape_5501",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "na",
+      "id": "connection_1769",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 689,
+            "y": 301
+          },
+          "x": 689,
+          "y": 301
+        },
+        {
+          "x": 855,
+          "y": 301
+        },
+        {
+          "original": {
+            "x": 903,
+            "y": 77
+          },
+          "x": 903,
+          "y": 77
+        }
+      ],
+      "source": "shape_5501",
+      "target": "shape_5649",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "envia",
+      "id": "connection_2073",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 13,
+      "waypoints": [
+        {
+          "original": {
+            "x": 952,
+            "y": 23
+          },
+          "x": 952,
+          "y": 23
+        },
+        {
+          "original": {
+            "x": 1147,
+            "y": -13
+          },
+          "x": 1147,
+          "y": -13
+        }
+      ],
+      "source": "shape_5649",
+      "target": "shape_4573",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "para",
+      "id": "connection_3510",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 1228,
+            "y": -12
+          },
+          "x": 1228,
+          "y": -12
+        },
+        {
+          "original": {
+            "x": 1367,
+            "y": 16
+          },
+          "x": 1367,
+          "y": 16
+        }
+      ],
+      "source": "shape_4573",
+      "target": "shape_4656",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "devolve",
+      "id": "connection_1782",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 14,
+      "waypoints": [
+        {
+          "original": {
+            "x": 1367,
+            "y": 35
+          },
+          "x": 1367,
+          "y": 35
+        },
+        {
+          "original": {
+            "x": 1218,
+            "y": 80
+          },
+          "x": 1218,
+          "y": 80
+        }
+      ],
+      "source": "shape_4656",
+      "target": "shape_7933",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "para",
+      "id": "connection_6695",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 1147,
+            "y": 82
+          },
+          "x": 1147,
+          "y": 82
+        },
+        {
+          "original": {
+            "x": 958,
+            "y": 39
+          },
+          "x": 958,
+          "y": 39
+        }
+      ],
+      "source": "shape_7933",
+      "target": "shape_5649",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "notifica",
+      "id": "connection_2327",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 17,
+      "waypoints": [
+        {
+          "original": {
+            "x": 1384,
+            "y": 70
+          },
+          "x": 1384,
+          "y": 70
+        },
+        {
+          "x": 1335,
+          "y": 181
+        },
+        {
+          "original": {
+            "x": 1229,
+            "y": 181
+          },
+          "x": 1229,
+          "y": 181
+        }
+      ],
+      "source": "shape_4656",
+      "target": "shape_2639",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "para",
+      "id": "connection_1465",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 1148,
+            "y": 181
+          },
+          "x": 1148,
+          "y": 181
+        },
+        {
+          "x": 1035,
+          "y": 181
+        },
+        {
+          "original": {
+            "x": 941,
+            "y": 57
+          },
+          "x": 941,
+          "y": 57
+        }
+      ],
+      "source": "shape_2639",
+      "target": "shape_5649",
+      "multipleNumberAllowed": false
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "imprime",
+      "id": "connection_8369",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 18,
+      "waypoints": [
+        {
+          "original": {
+            "x": 926,
+            "y": 71
+          },
+          "x": 926,
+          "y": 76
+        },
+        {
+          "x": 985,
+          "y": 301
+        },
+        {
+          "original": {
+            "x": 1147,
+            "y": 301
+          },
+          "x": 1147,
+          "y": 301
+        }
+      ],
+      "source": "shape_5649",
+      "target": "shape_0433",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "informa",
+      "id": "connection_7872",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": 5,
+      "waypoints": [
+        {
+          "original": {
+            "x": 355,
+            "y": 20
+          },
+          "x": 375,
+          "y": 8
+        },
+        {
+          "x": 490,
+          "y": -60
+        },
+        {
+          "original": {
+            "x": 640,
+            "y": -90
+          },
+          "x": 607,
+          "y": -83
+        }
+      ],
+      "source": "shape_5181",
+      "target": "shape_9284",
+      "multipleNumberAllowed": null
+    },
+    {
+      "type": "domainStory:activity",
+      "name": "na",
+      "id": "connection_6688",
+      "$type": "Element",
+      "di": {},
+      "$descriptor": {},
+      "pickedColor": "black",
+      "number": null,
+      "waypoints": [
+        {
+          "original": {
+            "x": 645,
+            "y": -90
+          },
+          "x": 688,
+          "y": -81
+        },
+        {
+          "x": 790,
+          "y": -60
+        },
+        {
+          "original": {
+            "x": 910,
+            "y": 20
+          },
+          "x": 878,
+          "y": -1
+        }
+      ],
+      "source": "shape_9284",
+      "target": "shape_5649",
+      "multipleNumberAllowed": false
+    },
+    {
+      "info": "Realizar Pedido"
+    },
+    {
+      "version": "2.0.0-beta.1"
+    }
+  ]
+}

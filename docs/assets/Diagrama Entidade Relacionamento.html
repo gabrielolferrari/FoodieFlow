@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.5.0/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+
+<body>
+    <div class="mermaid">
+        erDiagram
+        Cliente {
+        int id PK
+        varchar(11) cpf "Apenas dígitos"
+        varchar[255] nome
+        varchar[255] email
+        }
+
+        Produto {
+        int id PK
+        int idCategoria FK
+        varchar[255] nome
+        text descricao
+        decimal preco
+        }
+
+        Imagem {
+        int id PK
+        int idProduto FK
+        varchar[255] url
+        }
+
+        Produto_Ingrediente {
+        int idProduto FK
+        int idIngrediente FK
+        int quantidade
+        }
+
+        Ingrediente {
+        int id PK
+        varchar[255] nome
+        }
+
+        Pedido {
+        int id PK
+        int idCliente FK
+        int idStatusPedido FK
+        int codigo
+        }
+
+        Item {
+        int id PK
+        int idPedido FK
+        int idProduto FK
+        int quantidade
+        decimal preco
+        }
+
+        Item_Ingrediente {
+        int idItem FK
+        int idIngrediente FK
+        int quantidade
+        }
+
+        StatusPedido {
+        int id PK
+        string estado
+        }
+
+        Categoria {
+        int id PK
+        string nome
+        }
+
+        Cliente ||--o{ Pedido : "Faz"
+        Produto ||--o{ Item : "Contém"
+        Produto ||--o{ Imagem : "Possui"
+        Produto ||--o{ Produto_Ingrediente : "Possui"
+        Produto_Ingrediente }|--|| Ingrediente : "Contém"
+        Pedido ||--o{ Item : "Possui"
+        Categoria ||--o{ Produto : "Possui"
+        Item }|--|| Item_Ingrediente : "Possui"
+        Item_Ingrediente }|--|| Ingrediente : "Contém"
+        Pedido }|..|| StatusPedido : "Possui"
+
+    </div>
+</body>
+
+</html>
