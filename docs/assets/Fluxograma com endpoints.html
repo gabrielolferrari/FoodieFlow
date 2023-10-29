@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div class="mermaid">
+        flowchart TD
+
+        inicio((Início))
+        fim((Fim))
+        f1((A))
+        i1((A))
+        style f1 fill:#cdb4db
+        style i1 fill:#cdb4db
+        f2((B))
+        i2((B))
+        style f2 fill:#ffafcc
+        style i2 fill:#ffafcc
+
+        inicio((Início)) --> cpf
+        cpf --> |Não| f1
+        cliente-existe --> |Sim| f1
+        cadastro-cliente --> f1
+        i1 --> exibir-cardapio
+        criar-pedido --> f2
+        i2 --> enviar-cobranca
+        notificar-pagamento --> fim((Fim))
+
+
+
+
+        subgraph Pagamento
+        enviar-cobranca[Solicitar pagamento]
+        receber-qr-code[Receber QR Code]
+        aguardar-pagamento{Pagamento confirmado?}
+        notificar-pagamento[[PUT /pedidos/checkout/:idPedido]]
+
+        enviar-cobranca --> receber-qr-code
+        receber-qr-code --> aguardar-pagamento
+        aguardar-pagamento --> |Não| receber-qr-code
+        aguardar-pagamento --> |Sim| notificar-pagamento
+        end
+
+        subgraph Cliente
+        cpf{Deseja informar CPF?}
+        informar-cpf[\Informar CPF\]
+        verificar-cpf[[GET /clientes/bycpf/:cpf]]
+        cliente-existe{Cliente existe?}
+        solicitar-cadastro[\Solicitar cadastro\]
+        cadastro-cliente[[POST /clientes]]
+
+        cpf --> |Sim| informar-cpf
+        informar-cpf --> verificar-cpf
+        verificar-cpf --> cliente-existe
+        cliente-existe --> |Não| solicitar-cadastro
+        solicitar-cadastro --> cadastro-cliente
+        end
+
+        subgraph Pedido
+        exibir-cardapio[Exibir cardápio]
+        buscar-categoria[[GET /categorias]]
+        buscar-produto[[GET /produtos/bycategoria/:idCategoria]]
+        escolher-produto[Escolher produto]
+        produto-personalizavel{Produto personalizável?}
+        buscar-ingredientes[[GET /produtos/:idProduto]]
+        escolher-ingredientes[\Escolher ingredientes\]
+        incluir-carrinho[\Incluir no carrinho\]
+        pedido-concluido{Pedido concluído?}
+        criar-pedido[[POST /pedidos]]
+
+        exibir-cardapio --> buscar-categoria
+        buscar-categoria --> buscar-produto
+        buscar-produto --> escolher-produto
+        escolher-produto --> produto-personalizavel
+        produto-personalizavel --> |Sim| buscar-ingredientes
+        buscar-ingredientes --> escolher-ingredientes
+        escolher-ingredientes --> incluir-carrinho
+        produto-personalizavel --> |Não| incluir-carrinho
+        incluir-carrinho --> pedido-concluido
+        pedido-concluido --> |Não| escolher-produto
+        pedido-concluido --> |Sim| criar-pedido
+        end
+
+
+
+    </div>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/mermaid@10.6.0/dist/mermaid.min.js
+"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</body>
+
+</html>

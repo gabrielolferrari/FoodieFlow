@@ -18,10 +18,6 @@ class ClienteRepository(ABC):
     @abstractmethod
     def get_clientes(self, db: Session, skip: int = 0, limit: int = 100):
         pass
-    
-    @abstractmethod
-    def get_cliente_by_cpf(self, db: Session, cpf: str):
-        pass
 
     @abstractmethod
     def update_cliente(self, db: Session, cliente_id: int, updated_cliente: ClienteModel):

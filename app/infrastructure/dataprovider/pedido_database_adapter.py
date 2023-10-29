@@ -6,12 +6,12 @@ from core.model.cliente import Cliente as ClienteModel
 from core.model.orm.pedido import Pedido as PedidoORM
 from core.model.orm.cliente import Cliente as ClienteORM
 from core.model.orm.produto import Produto as ProdutoORM
+from core.ports.pedido_repository import PedidoRepository
 from application.commons.enums.status import StatusEnum
 import datetime
 import string
 
-class PedidoDatabaseAdapter:
-    
+class PedidoDatabaseAdapter(PedidoRepository):
     # Definindo os caracteres para a base 62
     BASE62 = string.ascii_uppercase + string.ascii_lowercase + string.digits
 

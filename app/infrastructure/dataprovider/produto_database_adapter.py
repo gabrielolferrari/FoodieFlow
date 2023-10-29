@@ -6,10 +6,9 @@ from core.model.orm.imagem import Imagem as ImagemORM
 from core.model.ingrediente import Ingrediente
 from core.model.imagem import Imagem
 from core.model.produto import ProdutoCompleto
+from core.ports.produto_repository import ProdutoRepository
 
-
-class ProdutoDatabaseAdapter:
-
+class ProdutoDatabaseAdapter(ProdutoRepository):
     def _to_produto_completo(self, produto: ProdutoORM) -> ProdutoCompleto:
         return ProdutoCompleto(
             id=produto.id,

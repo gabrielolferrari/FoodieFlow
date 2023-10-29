@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.5.0/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+
+<body>
+    <div class="mermaid">
+        classDiagram
+
+        class Cliente {
+        - id: int
+        - cpf: string
+        - nome: string
+        - email: string
+        }
+
+        class Produto {
+        - id: int
+        - categoria: Categoria
+        - nome: string
+        -
+        - descricao: string
+        - preco: decimal
+        - imagens: string[]
+        - ingredientes: Ingrediente[]
+        }
+
+        class Ingrediente {
+        - id: int
+        - nome: string
+        }
+
+        class Pedido {
+        - id: int
+        - codigo: int
+        - status: StatusPedido
+        - cliente: Cliente
+        - itens: Item[]
+        + adicionarItem(item: Item)
+        + removerItem(item: Item)
+        + atualizarStatus(status: StatusPedido)
+        + calcularTotal(): decimal
+        }
+
+        class Item{
+        - id: int
+        - produto: Produto
+        - quantidade: int
+        - preco: decimal
+        - ingredientes: Ingrediente[]
+        }
+
+        class StatusPedido {
+        - id: int
+        - estado: string
+        }
+
+        class Categoria {
+        - id: int
+        - nome: string
+        }
+
+        class Pagamento {
+        &lt;&lt;interface&gt;&gt;
+        + solicitarQrCodeParaPagamento(pedido: Pedido)
+        + verificarPagamento(pedido: Pedido)
+        }
+
+        class Autoatendimento {
+        + realizarPedido(pedido: Pedido)
+        }
+
+        Cliente -- Pedido : Pertence >
+        Item -- Pedido : Possui >
+        Item -- Produto : Compõe >
+        Produto -- Categoria : Pertence a >
+        Pedido -- StatusPedido : Possui >
+        Pedido -- Pagamento : Realiza >
+        Produto -- Ingrediente : Possui >
+        Item -- Ingrediente : Possui >
+        Autoatendimento -- Pedido : Realiza >
+    </div>
+</body>
+
+</html>
