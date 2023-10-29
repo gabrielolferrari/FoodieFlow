@@ -2,8 +2,9 @@ from sqlalchemy.orm import Session
 from infrastructure import database
 from core.model.cliente import Cliente as ClienteModel
 from core.model.orm.cliente import Cliente as ClienteORM
+from core.ports.cliente_repository import ClienteRepository
 
-class ClienteDatabaseAdapter:
+class ClienteDatabaseAdapter(ClienteRepository):
     def create_cliente(self, db: Session, cliente: ClienteModel):
         db_cliente = ClienteORM(**cliente.dict())
         db.add(db_cliente)
