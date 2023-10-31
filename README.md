@@ -30,6 +30,53 @@ OBS: O parâmetro `-d` é para rodar em background, caso queira ver os logs, rem
 
 3. Acesse a aplicação `http://localhost:8000/healthcheck`
 
+4. Add informações iniciais no banco de dados
+
+```sql
+-- Adicionando categorias
+
+INSERT INTO categoria (nome) VALUES 
+('Lanche'),
+('Acompanhamento'),
+('Bebida'),
+('Sobremesa');
+
+-- Adicionando ingredientes de exemplo
+
+-- Ingredientes para Lanches
+INSERT INTO ingrediente (nome) VALUES
+('Pão'),
+('Hambúrguer de Carne'),
+('Queijo'),
+('Alface'),
+('Tomate');
+
+-- Ingredientes para Acompanhamentos
+INSERT INTO ingrediente (nome) VALUES
+('Batata Frita'),
+('Onion Rings');
+
+-- Ingredientes para Bebidas
+INSERT INTO ingrediente (nome) VALUES
+('Água'),
+('Refrigerante'),
+('Suco de Laranja');
+
+-- Ingredientes para Sobremesas
+INSERT INTO ingrediente (nome) VALUES
+('Sorvete'),
+('Calda de Chocolate'),
+('Chantilly');
+
+-- Adicionando status
+
+INSERT INTO status (id, nome) VALUES
+(1, 'Recebido'),
+(2, 'Em preparação'),
+(3, 'Pronto'),
+(4, 'Finalizado');
+```
+
 ## Logging
 
 O logging foi configurado usando a biblioteca `daiquiri`. Nos ambientes `HML` e `PRD`, os logs são integrados ao Datadog. Certifique-se de configurar corretamente suas variáveis de ambiente para permitir a integração adequada.
