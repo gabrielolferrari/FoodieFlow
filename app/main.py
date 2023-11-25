@@ -12,6 +12,8 @@ from application.entrypoint import produto_controller
 from application.entrypoint import pedido_controller
 from core.model.orm import status, cliente, categoria, imagem, ingrediente, produto, pedido
 
+
+
 HOST = config('HOST_API', default='localhost')
 PORT = config('PORT_API', default='8000')
 

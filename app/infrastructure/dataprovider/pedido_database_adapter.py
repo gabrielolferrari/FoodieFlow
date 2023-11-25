@@ -101,7 +101,7 @@ class PedidoDatabaseAdapter(PedidoRepository):
         return self._to_pedido_completo(db_pedido)
 
     def get_pedidos(self, db: Session, skip: int = 0, limit: int = 100):
-        pedidos = db.query(PedidoORM).offset(skip).limit(limit).all()
+        pedidos = db.query(PedidoORM).filter(PedidoORM.id_status != 4).order_by(PedidoORM.id_status, PedidoORM.id).offset(skip).limit(limit).all()
         return [self._to_pedido_completo(pedido) for pedido in pedidos]
 
     def get_pedidos_by_status(self, db: Session, status: int, skip: int = 0, limit: int = 100):
