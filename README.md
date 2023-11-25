@@ -76,6 +76,9 @@ INSERT INTO status (id, nome) VALUES
 (3, 'Pronto'),
 (4, 'Finalizado');
 ```
+5. Add massa de pedidos
+
+Utilize o arquivo `database_pedidos_values.sql` como referência.
 
 ## Logging
 
