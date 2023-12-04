@@ -1,0 +1,18 @@
+python:
+  replicaCount: 1
+  image:
+    repository: python
+    tag: latest
+  service:
+    type: NodePort
+    port: 8000
+
+postgres:
+  image:
+    repository: postgres
+    tag: 14
+  service:
+    type: NodePort
+    port: 5432
+  persistence:
+    size: 1Gi
